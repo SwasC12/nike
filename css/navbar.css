@@ -1,0 +1,39 @@
+/* navbar.css */
+.navbar {
+    background-color: #414040;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 60px; /* Increase the height as needed */
+  }
+  
+  #logo {
+    max-width: 40px;
+    max-height: auto;
+    margin-right: 20px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .navbar li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  

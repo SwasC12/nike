@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/nike.css">
+  <title>Home</title>
+</head>
+<body>
+  <!-- Include Navbar -->
+  <header>
+    <div class="container">
+      <!-- Include navbar.html here -->
+      <!-- You can use server-side includes or JavaScript to include the navbar -->
+      <script>
+        fetch('/component/navbar.html')
+          .then(response => response.text())
+          .then(html => document.querySelector('header').innerHTML = html);
+      </script>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+
+  
+  <div class="container">
+    <h1>HOME OF THE ATHLETES</h1>
+    <img src="assets/media/shoespng.parspng.com_.png">
+  </div>
+
+  <div class="trend-container">
+    <span id="trending">Trending.</span>
+
+  </div>
+  <div class="scroll-container">
+    <img src="/assets/media/shoespng.parspng.com-14.png" alt="Cinque Terre">
+    <img src="/assets/media/411-4111795_nike-shoe-png-nike-shoes-png-hd-transparent.png" alt="Forest">
+    <img src="/assets/media/shoes-transparent-background-24.png" alt="Northern Lights">
+    <img src="/assets/media/Nike-Shoes-PNG-Cutout.png" alt="Mountains">
+  </div>
+
+</body>
+</html>

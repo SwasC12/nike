@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'h1';
+    src: url('/assets/fonts/Futura Std Extra Bold Condensed.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'trend';
+    src: url('/assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'h1';
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center contents horizontally */
+    height: 120vh; /* Optional: Set height to viewport height for full-page centering */
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.container img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 50%; /* Limit the maximum width of the image */
+    margin-bottom: 20px; /* Add bottom margin to create space between image and trend container */
+    animation: slideDown 1s ease forwards; /* Apply the animation to the image */
+}
+
+.trend-container {
+    text-align: left; /* Align content horizontally */
+}
+
+#trending {
+    font-family: 'trend';
+    font-size: large;
+}
+
+div.scroll-container {
+    background-color: transparent;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-container img {
+    padding: 10px;
+    max-width: 50%; /* Limit the maximum width of the images */
+}

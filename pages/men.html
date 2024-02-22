@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/men.css">
+  <title>Men</title>
+</head>
+<body>
+  <!-- Include Navbar -->
+  <header>
+    <div class="container">
+      <!-- Include navbar.html here -->
+      <!-- You can use server-side includes or JavaScript to include the navbar -->
+      <script>
+        fetch('/component/navbar.html')
+          .then(response => response.text())
+          .then(html => document.querySelector('header').innerHTML = html);
+      </script>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Nike Men</h1>
+    <p>Explore our latest products and collections.</p>
+  </div>
+</body>
+</html>
